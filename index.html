@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetch API Task</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+	<header class="d-none d-md-block">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white mt-2">
+					<div>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">#Popular</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Favorite</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Politics</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Videos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Trend</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Business</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Science</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#Sport</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">#IT</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- left menu fixed -->
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">#Popular</a>
+			<a href="#">#Favorite</a>
+			<a href="#">#Politics</a>
+			<a href="#">#Videos</a>
+			<a href="#">#Trend</a>
+			<a href="#">#Business</a>
+			<a href="#">#Science</a>
+			<a href="#">#Sport</a>
+			<a href="#">#IT</a>
+		</div>
+	</div>
+	<div class="openbtn">
+		<a class="navbar-brand" href="#">T</a>
+		<span style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div class="country-icon">
+			<img src="images/globe-icon.png" alt="globe-icon" class="img-fluid" width="20" height="20" />
+			<img src="images/globe-icon-2.png" alt="US Flag" class="img-fluid" width="20" height="20" />
+		</div>
+	</div>
+
+	<!-- main content -->
+	<main class="main py-4 py-md-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<section id="myData"></section>
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Share Post</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body text-center">
+								<img src="images/facebook.png" alt="facebook" width="30" height="30" class="mx-2" />
+								<img src="images/instagram.png" alt="instagram" width="30" height="30" class="mx-2" />
+								<img src="images/twitter.png" alt="twitter" width="30" height="30" class="mx-2" />
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- footer -->
+	<footer class="fixed-bottom"></footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+    	AOS.init({
+    		delay: 500,
+    		duration: 1500
+    	});
+  	</script>
+	<script src="js/script.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
