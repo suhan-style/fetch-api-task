@@ -3,6 +3,9 @@
 	padding: 0px;
 	margin: 0px;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 body {
 	border-left: 10px solid #fea5db;
     border-right: 10px solid #fea5db;
